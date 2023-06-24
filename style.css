@@ -303,6 +303,11 @@ body {
 .section > img {
     width: 100%;
 }
+.attribution {
+    margin-top: -3rem;
+    text-align: center;
+    margin-bottom: -2rem;
+}
 /* End of footer */
 
 /* formstuff */
@@ -540,10 +545,15 @@ body {
         padding: 3rem 0rem 2rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "blockTwo blockOne"
+            "attribution attribution";
         justify-content: center;
+        row-gap: 2rem;
     }
 
     .footerblockOne {
+        grid-area: blockOne;
         order: 2;
         width: 100%; 
     }
@@ -584,6 +594,7 @@ body {
         width: 100%;
         display: flex;
         align-items: center;
+        grid-area: blockTwo;
     }
 
     .fsecOne > img {
@@ -599,5 +610,10 @@ body {
 
     .fsecTwo > p:nth-of-type(3) {
         display: inline;
+    }
+
+    .attribution {
+        grid-area: attribution;
+        text-align: center;
     }
 }
