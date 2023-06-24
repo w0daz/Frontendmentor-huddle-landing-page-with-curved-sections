@@ -309,6 +309,10 @@ body {
     row-gap: 0.6rem;
 }
 
+.inputarea > .div {
+    width: 100%;
+}
+
 .input-email {
     width: 100%;
     height: 2.5rem;
@@ -583,5 +587,5 @@ body {
         justify-content: start;
     }
 
-
+    
 }
