@@ -545,7 +545,7 @@ body {
     }
 
     .footerblockOne > p {
-        width: 48%;
+        width: 56%;
     }
 
     .footerblockOne > form {
@@ -553,6 +553,7 @@ body {
         flex-direction: row;
         align-items: center;
         column-gap: 2.5rem;
+        margin-top: 1rem;
     }
 
     .input-email {
@@ -586,9 +587,10 @@ body {
     }
 
     .fsecOne, .fsecTwo, .fsecThree {
-        width: 45%;
+        width: 51%;
         display: flex;
         justify-content: start;
     }
+
     
 }
