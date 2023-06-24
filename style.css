@@ -556,7 +556,7 @@ body {
     }
 
     .input-email {
-        width: 18.75rem;
+        width: 15.75rem;
         display: flex;
         flex-direction: column;
         column-gap: 1rem;
