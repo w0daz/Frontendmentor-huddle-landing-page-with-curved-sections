@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Huddle landing page with curved sections</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: start;
+        margin-left: -3.3rem;
+      }
+      .attribution a {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <div class="section">
+        <div class="hero">
+          <div class="nav">
+            <img src="images/logo.svg" alt="nav-logo" />
+            <a href="#">Try it free</a>
+          </div>
+          <!-- End of nav -->
+
+          <div class="herotext">
+            <h1>Build The Community Your Fans Will Love</h1>
+            <p>
+              Huddle re-imagines the way we build communities. You have a voice,
+              but so does your audience. Create connections with your users as
+              you engage in genuine discussion.
+            </p>
+            <a href="#">Get Started For Free</a>
+          </div>
+
+          <img src="images/screen-mockups.svg" alt="screen mockups" />
+        </div>
+        <!-- End of hero -->
+
+        <div class="stats">
+          <div class="statsblockOne">
+            <img src="images/icon-communities.svg" alt="communities icon" />
+            <h2>1.4k+</h2>
+            <p>Communities Formed</p>
+          </div>
+
+          <div class="statsblockTwo">
+            <img src="images/icon-messages.svg" alt="messages icon" />
+            <h2>2.7m+</h2>
+            <p>Messages Sent</p>
+          </div>
+        </div>
+        <!-- End of stats -->
+
+        <div class="cards">
+          <img src="images/bg-section-top-mobile-1.svg" alt="bg" />
+          <div class="cardOne">
+            <img
+              src="images/illustration-grow-together.svg"
+              alt="grow together illustration"
+            />
+            <div class="cardOnetext cardtext">
+              <h2>Grow Together</h2>
+              <p>
+                Generate meaningful discussions with your audience and build a
+                strong, loyal community. Think of the insightful conversations
+                you miss out on with a feedback form.
+              </p>
+            </div>
+          </div>
+          <img src="images/bg-section-bottom-mobile-1.svg" alt="bg" />
+
+          <div class="cardTwo">
+            <img
+              src="images/illustration-flowing-conversation.svg"
+              alt="flowing together illustration"
+            />
+            <div class="cardTwotext cardtext">
+              <h2>Flowing Conversations</h2>
+              <p>
+                You wouldn't paginate a conversation in real life, so why do it
+                online? Our threads have just-in-time loading for a more natural
+                flow.
+              </p>
+            </div>
+          </div>
+
+          <img src="images/bg-section-top-mobile-2.svg" alt="bg" />
+          <div class="cardThree">
+            <img
+              src="images/illustration-your-users.svg"
+              alt="your users illustration"
+            />
+            <div class="cardThreetext cardtext">
+              <h2>Your Users</h2>
+              <p>
+                It takes no time at all to integrate Huddle with your app's
+                authentication solution. This means, once signed in to your app,
+                your users can start chatting immediately.
+              </p>
+            </div>
+          </div>
+          <img src="images/bg-section-bottom-mobile-2.svg" alt="bg" />
+        </div>
+        <!-- End of cards -->
+
+        <div class="subsection">
+          <h2>Ready To Build Your Community?</h2>
+          <a href="#">Get Started For Free</a>
+        </div>
+        <!-- End of subsection -->
+
+        <img src="images/bg-footer-top-mobile.svg" alt="bg" />
+        <div class="footer">
+          <div class="footerblockOne">
+            <h2>Newsletter</h2>
+            <p>
+              To recieve tips on how to grow your community, sign up to our
+              weekly newsletter. We’ll never send you spam or pass on your email
+              address
+            </p>
+            <form
+              class="inputarea email-form"
+              onsubmit="app.submitForm(this); return false"
+            >
+              <div class="div">
+              <input
+                class="input-email"
+                type="email"
+                id="email-cta"
+                name="email"
+                placeholder=""
+                required
+                aria-describedby="email-alert-cta"
+              />
+              <p
+                id="email-alert-cta"
+                class="form-message"
+                aria-live="polite"
+              ></p>
+              </div>
+              <button class="input-button" type="submit">Subscribe</button>
+            </form>
+          </div>
+
+          <div class="footerblockTwo">
+            <div class="fsecOne">
+              <img src="images/logo.svg" alt="footerlogo" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
+              </p>
+            </div>
+            <div class="fsecTwo">
+              <p>
+                <span><img src="images/icon-phone.svg" alt="phone icon" /></span
+                >Phone: +1-543-123-4567
+              </p>
+              <p>
+                <span><img src="images/icon-email.svg" alt="email icon" /></span
+                >example@huddle.com
+              </p>
+            </div>
+            <div class="fsecThree">
+              <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            </div>
+            <p class="attribution">
+              Challenge by
+              <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+              >. Coded by <a href="#">w0daz</a>.
+            </p>
+          </div>
+          
+        </div>
+        <!-- End of footer -->
+      </div>
+    </main>
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+
+  <script>
+    "use strict";
+
+    class Fylo {
+      form = Array.from(document.querySelectorAll(".email-form"));
+
+      constructor() {
+        this.noValidate();
+      }
+
+      submitForm(form) {
+        const input = form.querySelector("input");
+        if (input.value === "" || !this.validateEmail(input.value)) {
+          this.showError(form, "Please check your email");
+        } else {
+          this.showSuccess(form, "Thank you!");
+          input.value = "";
+        }
+      }
+
+      validateEmail(email) {
+        const re = /\S+@\S+\.\S+/;
+        return re.test(email);
+      }
+
+      showError(form, message) {
+        const formMessage = form.querySelector(".form-message");
+        formMessage.textContent = message;
+        form.classList.add("invalid-form");
+      }
+
+      showSuccess(form, message) {
+        const delay = form.classList.contains("invalid-form") ? 200 : 0;
+        form.classList.remove("invalid-form");
+        setTimeout(
+          function () {
+            const formMessage = form.querySelector(".form-message");
+            formMessage.textContent = message;
+            form.classList.add("success-form");
+          }.bind(this),
+          delay
+        );
+      }
+
+      noValidate() {
+        this.form.forEach((form) =>
+          form.setAttribute("novalidate", "novalidate")
+        );
+      }
+    }
+
+    const app = new Fylo();
+  </script>
+</html>
